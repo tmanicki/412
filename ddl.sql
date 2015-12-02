@@ -151,9 +151,8 @@ SHOW ERRORS;
 CREATE TABLE cooks (
 	employeeID  INTEGER,
   instanceID INTEGER,
-  orderID     INTEGER,
-	PRIMARY KEY (instanceID, orderID),
-  FOREIGN KEY(instanceID) REFERENCES food(instanceID)
+	PRIMARY KEY (instanceID),
+  FOREIGN KEY (employeeID) REFERENCES employee(employeeID)
   );
 SHOW ERRORS;
 
@@ -161,13 +160,24 @@ SHOW ERRORS;
 ** ----------------------------------------------------------------------------
 ** add foreign key for the employee table 
 ** --------------------------------------------------------------------------*/
+
+
 ALTER TABLE cooks
-	ADD (FOREIGN KEY (employeeID) REFERENCES employee(employeeID) ON DELETE SET NULL);
+	ADD (FOREIGN KEY(instanceID) REFERENCES food(instanceID) ON DELETE SET NULL);
 
 SHOW ERRORS;
 
-ALTER TABLE cooks
-	ADD (FOREIGN KEY(orderID) REFERENCES food(orderID) ON DELETE SET NULL);
-
+/*
+** ----------------------------------------------------------------------------
+** script to create the pay table 
+** --------------------------------------------------------------------------*/
+CREATE TABLE pay (
+  billID      INTEGER,
+  cPhone      INTEGER,
+  tip         FLOAT NOT NULL,
+  paymentType VARCHAR (20)  NOT NULL CHECK(paymentType = 'Cash' or paymentType = 'Check' or paymentType = 'Card'),
+	PRIMARY KEY(billID, cPhone),
+	FOREIGN KEY(billID) REFERENCES bill(billID),
+  FOREIGN KEY (cPhone) REFERENCES customer(cPhone)
+);
 SHOW ERRORS;
-

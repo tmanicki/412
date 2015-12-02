@@ -143,7 +143,7 @@ UPDATE bill SET tax = 3.52 WHERE billID = 10;
 ** --------------------------------------------------------------------------*/
 
 INSERT INTO customer VALUES('Jason k.',4803125846,'jak@gmail.com');
-INSERT INTO customer VALUES('David L.',4805226878,'dl@gmail.com');
+INSERT INTO customer VALUES('David L.',4805226878,'spock@gmail.com');
 INSERT INTO customer VALUES('King Kong',9293121548,'kk@yahoo.com');
 INSERT INTO customer VALUES('Sara R.',8521234567,'sr@gmail.com');
 INSERT INTO customer VALUES('Odin',1235218564,'odin@cox.net');
@@ -161,7 +161,7 @@ UPDATE customer SET cName = 'Sir Thor' WHERE cPhone = 8569861234;
 UPDATE customer SET cEmail = 'sara@live.com' WHERE cPhone = 8521234567;
 UPDATE customer SET cPhone = 5256369512 WHERE cPhone = 1235218564;
 UPDATE customer SET cName = 'Luke Skywalker' WHERE cPhone = 5861329645;
-UPDATE customer SET cEmail = 'Indiana Jones' WHERE cPhone = 4805226878;
+UPDATE customer SET cName = 'Indiana Jones' WHERE cPhone = 4805226878;
 
 /*
 ** ----------------------------------------------------------------------------
@@ -265,10 +265,54 @@ UPDATE itemDisc SET amount = 2.15 WHERE productID = 10;
 /*
 ** ----------------------------------------------------------------------------
 ** script to insert data into the cooks table 
-** --------------------------------------------------------------------------
+** --------------------------------------------------------------------------*/
 
-INSERT INTO cooks VALUES(1,1,NULL);
-*/
 
+INSERT INTO cooks VALUES(1,1);
+INSERT INTO cooks VALUES(3,2);
+INSERT INTO cooks VALUES(7,3);
+INSERT INTO cooks VALUES(1,4);
+INSERT INTO cooks VALUES(2,5);
+INSERT INTO cooks VALUES(9,6);
+INSERT INTO cooks VALUES(10,7);
+INSERT INTO cooks VALUES(2,8);
+INSERT INTO cooks VALUES(10,9);
+INSERT INTO cooks VALUES(7,10);
+
+/*
+** ----------------------------------------------------------------------------
+** updates in the itemDisc table 
+** --------------------------------------------------------------------------*/
+UPDATE cooks SET employeeID = 9 WHERE instanceID = 1;
+UPDATE cooks SET employeeID = 2 WHERE instanceID = 3;
+UPDATE cooks SET employeeID = 2 WHERE instanceID = 7;
+UPDATE cooks SET employeeID = 3 WHERE instanceID = 5;
+UPDATE cooks SET employeeID = 5 WHERE instanceID = 9;
+
+/*
+** ----------------------------------------------------------------------------
+** script to insert data into the pay table 
+** --------------------------------------------------------------------------*/
+
+INSERT INTO pay VALUES(1,4805226878,1.25,'Cash');
+INSERT INTO pay VALUES(2,9293121548,22,'Check');
+INSERT INTO pay VALUES(3,8521234567,1.2,'Card');
+INSERT INTO pay VALUES(4,4803125846,12,'Cash');
+INSERT INTO pay VALUES(5,1234566699,32.42,'Check');
+INSERT INTO pay VALUES(6,5861329645,12.2,'Card');
+INSERT INTO pay VALUES(7,8521554455,9.52,'Card');
+INSERT INTO pay VALUES(8,8569861234,25.9,'Cash');
+INSERT INTO pay VALUES(9,8521234567,12.32,'Check');
+INSERT INTO pay VALUES(10,4805226878,9.25,'Card');
+
+/*
+** ----------------------------------------------------------------------------
+** updates in the pay table 
+** --------------------------------------------------------------------------*/
+UPDATE pay SET paymentType = 'Check' WHERE billID = 10;
+UPDATE pay SET amount = 202.59 WHERE billID = 3;
+UPDATE pay SET tip = 2.50 WHERE billID = 7;
+UPDATE pay SET tip = 3 WHERE billID = 5;
+UPDATE pay SET cPhone = 8569861234 WHERE billID = 9;
 
                          

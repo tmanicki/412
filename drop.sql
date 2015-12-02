@@ -14,6 +14,7 @@
 DROP TABLE cooks purge;
 DROP TABLE billDisc purge;
 DROP TABLE itemDisc purge;
+DROP TABLE pay purge;
 
 -- Tables w/o Foriegn Key
 DROP TABLE food purge;
