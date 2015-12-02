@@ -10,13 +10,13 @@
 
 -- show tables
 DESC iMenu;
-DESC employee;
+DESC emp;
 DESC ordr;
 DESC bill;
 DESC tble
 DESC customer;
 DESC food;
-DESC cooks;
+DESC billDisc;
 
 -- insert data
 @insert
@@ -62,6 +62,12 @@ SELECT * FROM customer;
 ** customer table contenct
 ** --------------------------------------------------------------------------*/
 SELECT * FROM food;
+
+/*
+** ----------------------------------------------------------------------------
+** customer table contenct
+** --------------------------------------------------------------------------*/
+SELECT * FROM billDisc;
 
 -- run query
 /*

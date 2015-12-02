@@ -28,10 +28,10 @@ SHOW ERRORS;
 ** --------------------------------------------------------------------------*/
 
 CREATE TABLE employee (
-	employeeID INTEGER,
+	employeeID INTEGER PRIMARY KEY,
   eName      VARCHAR (20) NOT NULL,
-  eStatus     VARCHAR (20) NOT NULL  CHECK (eStatus = 'Terminated' OR eStatus = 'Manager' OR eStatus = 'Waiter' OR eStatus = 'Cook'),
-  PRIMARY KEY (employeeID, eStatus)
+  eStatus     VARCHAR (20) NOT NULL CHECK (eStatus = 'Terminated' OR 
+  eStatus = 'Manager' OR eStatus = 'Waiter' OR eStatus = 'Cook')
 );
 
 SHOW ERRORS;
@@ -68,7 +68,7 @@ SHOW ERRORS;
 
 CREATE TABLE bill (
 	tax       FLOAT NOT NULL,
-  billID    INTEGER PRIMARY KEY,
+  billID    INTEGER NOT NULL PRIMARY KEY,
   total     FLOAT NOT NULL
 );
 
@@ -116,15 +116,29 @@ SHOW ERRORS;
 /*
 ** ----------------------------------------------------------------------------
 ** script to create the cooks table 
-** --------------------------------------------------------------------------*/
+** --------------------------------------------------------------------------
 CREATE TABLE cooks (
 	employeeID  INTEGER,
-  instanceID  INTEGER,
+  instanceID INTEGER,
   orderID     INTEGER,
-	PRIMARY KEY (instanceID, employeeID),
-	FOREIGN KEY(employeeID) REFERENCES employee(employeeID)ON DELETE CASCADE,
-  FOREIGN KEY(orderID) REFERENCES ordr(orderID)ON DELETE orderIDCASCADE,
-  FOREIGN KEY(instanceID) REFERENCES food(instanceID)ON DELETE CASCADE
+	PRIMARY KEY (employeeID, instanceID, orderID),
+  FOREIGN KEY(instanceID) REFERENCES food(instanceID),
+  FOREIGN KEY(orderID) REFERENCES ordr(orderID) ON DELETE CASCADE
+  );
+SHOW ERRORS;*/
+
+/*
+** ----------------------------------------------------------------------------
+** script to create the billDisc table 
+** --------------------------------------------------------------------------*/
+CREATE TABLE billDisc (
+	employeeID  INTEGER NOT NULL,
+  billID      INTEGER NOT NULL,
+  amount      FLOAT NOT NULL,
+	PRIMARY KEY (billID),
+  FOREIGN KEY(billID) REFERENCES bill(billID),
+ FOREIGN KEY (employeeID) REFERENCES employee(employeeID) ON DELETE CASCADE
+
 );
 SHOW ERRORS;
 

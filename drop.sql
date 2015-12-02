@@ -11,7 +11,7 @@
 ** --------------------------------------------------------------------------*/
 
 --Tables w/Foriegn Key
-DROP TABLE cooks purge;
+DROP TABLE billDisc purge;
 
 -- Tables w/o Foriegn Key
 DROP TABLE food purge;

@@ -209,4 +209,39 @@ UPDATE food SET FinishTime = TO_DATE('12/06/2015 11:02:59','mm/dd/yyyy hh24:mi:s
 UPDATE food SET fStatus = 'Completed' WHERE instanceID = 4;
 UPDATE food SET orderID = 11 WHERE instanceID = 10;
 
+/*
+** ----------------------------------------------------------------------------
+** script to insert data into the cooks table 
+** --------------------------------------------------------------------------
+
+INSERT INTO cooks VALUES(3,10,19);*/
+
+/*
+** ----------------------------------------------------------------------------
+** script to insert data into the billDisc table 
+** --------------------------------------------------------------------------*/
+
+INSERT INTO billDisc VALUES(1,2,32.45);
+INSERT INTO billDisc VALUES(3,1,2.52);
+INSERT INTO billDisc VALUES(5,3,21.25);
+INSERT INTO billDisc VALUES(9,4,6.25);
+INSERT INTO billDisc VALUES(9,5,6);
+INSERT INTO billDisc VALUES(9,7,.23);
+INSERT INTO billDisc VALUES(5,6,9.99);
+INSERT INTO billDisc VALUES(3,9,8);
+INSERT INTO billDisc VALUES(3,8,3.45);
+INSERT INTO billDisc VALUES(1,10,2.15);
+
+/*
+** ----------------------------------------------------------------------------
+** updates in the billDisc table 
+** --------------------------------------------------------------------------*/
+UPDATE billDisc SET employeeID = 1 WHERE employeeID = 8;
+UPDATE billDisc SET employeeID = 9 WHERE employeeID = 10;
+UPDATE billDisc SET amount = 7 WHERE employeeID = 7;
+UPDATE billDisc SET amount = 12.2 WHERE employeeID = 6;
+UPDATE billDisc SET amount = 5.24 WHERE employeeID = 5;
+
+
+
                          
