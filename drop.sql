@@ -10,12 +10,15 @@
 ** script to drop all objects in the database
 ** --------------------------------------------------------------------------*/
 
--- Tables 
+--Tables w/Foriegn Key
+DROP TABLE cooks purge;
+
+-- Tables w/o Foriegn Key
+DROP TABLE food purge;
 DROP TABLE employee purge;
 DROP TABLE tble purge;
 DROP TABLE bill purge;
 DROP TABLE customer purge;
-DROP TABLE food purge;
 DROP TABLE iMenu purge;
 DROP TABLE ordr purge;
 

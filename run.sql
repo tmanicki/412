@@ -16,6 +16,7 @@ DESC bill;
 DESC tble
 DESC customer;
 DESC food;
+DESC cooks;
 
 -- insert data
 @insert

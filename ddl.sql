@@ -112,3 +112,19 @@ CREATE TABLE food (
   FOREIGN KEY(orderID) REFERENCES ordr(orderID) ON DELETE CASCADE
 );
 SHOW ERRORS;
+
+/*
+** ----------------------------------------------------------------------------
+** script to create the cooks table 
+** --------------------------------------------------------------------------*/
+CREATE TABLE cooks (
+	employeeID  INTEGER,
+  instanceID  INTEGER,
+  orderID     INTEGER,
+	PRIMARY KEY (instanceID, employeeID),
+	FOREIGN KEY(employeeID) REFERENCES employee(employeeID)ON DELETE CASCADE,
+  FOREIGN KEY(orderID) REFERENCES ordr(orderID)ON DELETE orderIDCASCADE,
+  FOREIGN KEY(instanceID) REFERENCES food(instanceID)ON DELETE CASCADE
+);
+SHOW ERRORS;
+
