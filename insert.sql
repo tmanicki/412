@@ -199,6 +199,14 @@ INSERT INTO food VALUES('Completed',TO_DATE('12/01/2015 13:04:55','mm/dd/yyyy hh
 INSERT INTO food VALUES('Ordered',TO_DATE('11/22/2015 14:12:31','mm/dd/yyyy hh24:mi:ss'),
                          TO_DATE('11/22/2015 15:04:23','mm/dd/yyyy hh24:mi:ss'),10,9,2);
                          
-                         
+/*
+** ----------------------------------------------------------------------------
+** updates in the food table 
+** --------------------------------------------------------------------------*/
+UPDATE food SET productID = 8 WHERE instanceID = 1;
+UPDATE food SET StartTime = TO_DATE('12/06/2015 10:33:21','mm/dd/yyyy hh24:mi:ss') WHERE instanceID = 3;
+UPDATE food SET FinishTime = TO_DATE('12/06/2015 11:02:59','mm/dd/yyyy hh24:mi:ss') WHERE instanceID = 3;
+UPDATE food SET fStatus = 'Completed' WHERE instanceID = 4;
+UPDATE food SET orderID = 11 WHERE instanceID = 10;                         
 
 
