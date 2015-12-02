@@ -107,25 +107,12 @@ CREATE TABLE food (
   instanceID  INTEGER,
   productID   INTEGER,
   orderID     INTEGER,
-	PRIMARY KEY (instanceID, productID, orderID),
+	PRIMARY KEY (instanceID),
 	FOREIGN KEY(productID) REFERENCES iMenu(productID) ON DELETE CASCADE,
   FOREIGN KEY(orderID) REFERENCES ordr(orderID) ON DELETE CASCADE
 );
 SHOW ERRORS;
 
-/*
-** ----------------------------------------------------------------------------
-** script to create the cooks table 
-** --------------------------------------------------------------------------
-CREATE TABLE cooks (
-	employeeID  INTEGER,
-  instanceID INTEGER,
-  orderID     INTEGER,
-	PRIMARY KEY (employeeID, instanceID, orderID),
-  FOREIGN KEY(instanceID) REFERENCES food(instanceID),
-  FOREIGN KEY(orderID) REFERENCES ordr(orderID) ON DELETE CASCADE
-  );
-SHOW ERRORS;*/
 
 /*
 ** ----------------------------------------------------------------------------
@@ -154,5 +141,33 @@ CREATE TABLE itemDisc (
 	FOREIGN KEY(employeeID) REFERENCES employee(employeeID),
   FOREIGN KEY (productID) REFERENCES iMenu(productID)
 );
+SHOW ERRORS;
+
+
+/*
+** ----------------------------------------------------------------------------
+** script to create the cooks table 
+** --------------------------------------------------------------------------*/
+CREATE TABLE cooks (
+	employeeID  INTEGER,
+  instanceID INTEGER,
+  orderID     INTEGER,
+	PRIMARY KEY (instanceID, orderID),
+  FOREIGN KEY(instanceID) REFERENCES food(instanceID)
+  );
+SHOW ERRORS;
+
+/*
+** ----------------------------------------------------------------------------
+** add foreign key for the employee table 
+** --------------------------------------------------------------------------*/
+ALTER TABLE cooks
+	ADD (FOREIGN KEY (employeeID) REFERENCES employee(employeeID) ON DELETE SET NULL);
+
+SHOW ERRORS;
+
+ALTER TABLE cooks
+	ADD (FOREIGN KEY(orderID) REFERENCES food(orderID) ON DELETE SET NULL);
+
 SHOW ERRORS;
 

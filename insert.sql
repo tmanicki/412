@@ -211,13 +211,6 @@ UPDATE food SET orderID = 11 WHERE instanceID = 10;
 
 /*
 ** ----------------------------------------------------------------------------
-** script to insert data into the cooks table 
-** --------------------------------------------------------------------------
-
-INSERT INTO cooks VALUES(3,10,19);*/
-
-/*
-** ----------------------------------------------------------------------------
 ** script to insert data into the billDisc table 
 ** --------------------------------------------------------------------------*/
 
@@ -268,6 +261,14 @@ UPDATE itemDisc SET employeeID = 2 WHERE productID = 4;
 UPDATE itemDisc SET amount = 2.52 WHERE productID = 6;
 UPDATE itemDisc SET amount = 3.22 WHERE productID = 8;
 UPDATE itemDisc SET amount = 2.15 WHERE productID = 10;
+
+/*
+** ----------------------------------------------------------------------------
+** script to insert data into the cooks table 
+** --------------------------------------------------------------------------
+
+INSERT INTO cooks VALUES(1,1,NULL);
+*/
 
 
                          
