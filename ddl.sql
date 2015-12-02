@@ -142,3 +142,17 @@ CREATE TABLE billDisc (
 );
 SHOW ERRORS;
 
+/*
+** ----------------------------------------------------------------------------
+** script to create the itemDisc table 
+** --------------------------------------------------------------------------*/
+CREATE TABLE itemDisc (
+	employeeID  INTEGER,
+  productID    INTEGER,
+  amount      FLOAT NOT NULL,
+	PRIMARY KEY (productID),
+	FOREIGN KEY(employeeID) REFERENCES employee(employeeID),
+  FOREIGN KEY (productID) REFERENCES iMenu(productID)
+);
+SHOW ERRORS;
+

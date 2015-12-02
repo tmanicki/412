@@ -236,12 +236,38 @@ INSERT INTO billDisc VALUES(1,10,2.15);
 ** ----------------------------------------------------------------------------
 ** updates in the billDisc table 
 ** --------------------------------------------------------------------------*/
-UPDATE billDisc SET employeeID = 1 WHERE employeeID = 8;
-UPDATE billDisc SET employeeID = 9 WHERE employeeID = 10;
-UPDATE billDisc SET amount = 7 WHERE employeeID = 7;
-UPDATE billDisc SET amount = 12.2 WHERE employeeID = 6;
-UPDATE billDisc SET amount = 5.24 WHERE employeeID = 5;
+UPDATE billDisc SET employeeID = 1 WHERE billID = 8;
+UPDATE billDisc SET employeeID = 9 WHERE billID = 10;
+UPDATE billDisc SET amount = 7 WHERE billID = 7;
+UPDATE billDisc SET amount = 12.2 WHERE billID = 6;
+UPDATE billDisc SET amount = 5.24 WHERE billID = 5;
 
+/*
+** ----------------------------------------------------------------------------
+** script to insert data into the itemDisc table 
+** --------------------------------------------------------------------------*/
+
+INSERT INTO itemDisc VALUES(2,10,2.2);
+INSERT INTO itemDisc VALUES(4,9,1.25);
+INSERT INTO itemDisc VALUES(6,8,1.52);
+INSERT INTO itemDisc VALUES(8,7,6.25);
+INSERT INTO itemDisc VALUES(10,6,6.66);
+INSERT INTO itemDisc VALUES(1,5,3.52);
+INSERT INTO itemDisc VALUES(3,4,3);
+INSERT INTO itemDisc VALUES(7,3,5.43);
+INSERT INTO itemDisc VALUES(9,2,1.28);
+INSERT INTO itemDisc VALUES(5,1,3.45);
+
+
+/*
+** ----------------------------------------------------------------------------
+** updates in the itemDisc table 
+** --------------------------------------------------------------------------*/
+UPDATE itemDisc SET employeeID = 9 WHERE productID = 2;
+UPDATE itemDisc SET employeeID = 2 WHERE productID = 4;
+UPDATE itemDisc SET amount = 2.52 WHERE productID = 6;
+UPDATE itemDisc SET amount = 3.22 WHERE productID = 8;
+UPDATE itemDisc SET amount = 2.15 WHERE productID = 10;
 
 
                          

@@ -12,6 +12,7 @@
 
 --Tables w/Foriegn Key
 DROP TABLE billDisc purge;
+DROP TABLE itemDisc purge;
 
 -- Tables w/o Foriegn Key
 DROP TABLE food purge;
