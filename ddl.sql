@@ -181,3 +181,16 @@ CREATE TABLE pay (
   FOREIGN KEY (cPhone) REFERENCES customer(cPhone)
 );
 SHOW ERRORS;
+
+/*
+** ----------------------------------------------------------------------------
+** script to create the waiter table 
+** --------------------------------------------------------------------------*/
+CREATE TABLE waiter (
+  employeeID  INTEGER,
+  tNumber     INTEGER,	
+  PRIMARY KEY (tNumber),
+	FOREIGN KEY(employeeID) REFERENCES employee(employeeID),
+  FOREIGN KEY(tNumber) REFERENCES tble(tNumber)
+);
+SHOW ERRORS;

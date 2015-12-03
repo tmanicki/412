@@ -20,6 +20,7 @@ DESC billDisc;
 DESC itemDisc;
 DESC cooks;
 DESC pay;
+DESC waiter;
 
 -- insert data
 @insert
@@ -89,6 +90,13 @@ SELECT * FROM cooks;
 ** pay table contenct
 ** --------------------------------------------------------------------------*/
 SELECT * FROM pay;
+
+/*
+** ----------------------------------------------------------------------------
+** waiter table contenct
+** --------------------------------------------------------------------------*/
+SELECT * FROM waiter;
+
 
 -- run query
 /*

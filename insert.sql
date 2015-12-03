@@ -315,4 +315,29 @@ UPDATE pay SET tip = 2.50 WHERE billID = 7;
 UPDATE pay SET tip = 3 WHERE billID = 5;
 UPDATE pay SET cPhone = 8569861234 WHERE billID = 9;
 
-                         
+/*
+** ----------------------------------------------------------------------------
+** script to insert data into the waiter table 
+** --------------------------------------------------------------------------*/
+
+INSERT INTO waiter VALUES(1,10);
+INSERT INTO waiter VALUES(2,1);
+INSERT INTO waiter VALUES(3,9);
+INSERT INTO waiter VALUES(4,2);
+INSERT INTO waiter VALUES(5,8);
+INSERT INTO waiter VALUES(6,3);
+INSERT INTO waiter VALUES(7,7);
+INSERT INTO waiter VALUES(8,4);
+INSERT INTO waiter VALUES(9,6);
+INSERT INTO waiter VALUES(10,5);
+
+
+/*
+** ----------------------------------------------------------------------------
+** updates in the pay table 
+** --------------------------------------------------------------------------*/
+UPDATE waiter SET employeeID = 4 WHERE tNumber = 10;
+UPDATE waiter SET employeeID = 8 WHERE tNumber = 3;
+UPDATE waiter SET employeeID = 2 WHERE tNumber = 7;
+UPDATE waiter SET employeeID = 3 WHERE tNumber = 5;
+UPDATE waiter SET employeeID = 10 WHERE tNumber = 9;
