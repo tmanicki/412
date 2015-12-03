@@ -106,6 +106,21 @@ SHOW ERRORS;
 ** ----------------------------------------------------------------------------
 */
 
+/*
+** ----------------------------------------------------------------------------
+** script to create the category table 
+** --------------------------------------------------------------------------*/
+
+CREATE TABLE fCategory (
+	productID			INTEGER PRIMARY KEY,
+	ItemCategory	VARCHAR2(20)  NOT NULL CHECK (ItemCategory = 'Entre' or 
+  ItemCategory = 'Desert' or ItemCategory = 'Drink' or 
+  ItemCategory = 'Appitizer' or ItemCategory = 'Salad'),
+	FOREIGN KEY (productID) REFERENCES iMenu(productID) ON DELETE SET NULL
+);
+
+SHOW ERRORS;
+
 
 /*
 ** ----------------------------------------------------------------------------
@@ -163,7 +178,7 @@ SHOW ERRORS;
 CREATE TABLE cooks (
 	employeeID  INTEGER,
   instanceID INTEGER,
-    CookTime    FLOAT,
+  CookTime    FLOAT,
 	PRIMARY KEY (instanceID),
   FOREIGN KEY (employeeID) REFERENCES employee(employeeID)
   );

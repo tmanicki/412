@@ -11,6 +11,7 @@
 ** --------------------------------------------------------------------------*/
 
 --Tables w/Foriegn Key
+DROP TABLE fCategory purge;
 DROP TABLE cooks purge;
 DROP TABLE billDisc purge;
 DROP TABLE itemDisc purge;

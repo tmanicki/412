@@ -118,7 +118,7 @@ UPDATE tble SET PartySize = 3 WHERE tNumber = 4;
 
 /*
 ** ----------------------------------------------------------------------------
-** script to insert bill into the bill table 
+** script to insert data into the bill table 
 ** --------------------------------------------------------------------------*/
 
 INSERT INTO bill VALUES(10,1,32.50);
@@ -160,13 +160,41 @@ INSERT INTO customer VALUES('Broady Autumn',1234566699,'baba@gmail.com');
 
 /*
 ** ----------------------------------------------------------------------------
-** updates in the customer table 
+** updates in the bill table 
 ** --------------------------------------------------------------------------*/
 UPDATE customer SET cName = 'Sir Thor' WHERE cPhone = 8569861234;
 UPDATE customer SET cEmail = 'sara@live.com' WHERE cPhone = 8521234567;
 UPDATE customer SET cPhone = 5256369512 WHERE cPhone = 1235218564;
 UPDATE customer SET cName = 'Luke Skywalker' WHERE cPhone = 5861329645;
 UPDATE customer SET cName = 'Indiana Jones' WHERE cPhone = 4805226878;
+
+/*
+** ----------------------------------------------------------------------------
+** script to insert data into the fCategory table 
+(ItemCategory = 'Entre' or ItemCategory = 'Desert' or ItemCategory = 'Drink' or ItemCategory = 'Appitizer' or ItemCategory = 'Salad')
+** --------------------------------------------------------------------------*/
+
+INSERT INTO fCategory VALUES(1,'Entre');
+INSERT INTO fCategory VALUES(2,'Entre');
+INSERT INTO fCategory VALUES(3,'Entre');
+INSERT INTO fCategory VALUES(4,'Appitizer');
+INSERT INTO fCategory VALUES(5,'Drink');
+INSERT INTO fCategory VALUES(6,'Drink');
+INSERT INTO fCategory VALUES(7,'Appitizer');
+INSERT INTO fCategory VALUES(8,'Appitizer');
+INSERT INTO fCategory VALUES(9,'Entre');
+INSERT INTO fCategory VALUES(10,'Entre');
+
+/*
+** ----------------------------------------------------------------------------
+** updates in the fCategory table 
+** --------------------------------------------------------------------------*/
+UPDATE fCategory SET ItemCategory = 'Desert' WHERE productID = 10;
+UPDATE fCategory SET ItemCategory = 'Salad' WHERE productID = 9;
+UPDATE fCategory SET ItemCategory = 'Appitizer' WHERE productID = 1;
+UPDATE fCategory SET ItemCategory = 'Entre' WHERE productID = 7;
+UPDATE fCategory SET ItemCategory = 'Appitizer' WHERE productID = 3;
+
 
 /*
 ** ----------------------------------------------------------------------------
@@ -286,7 +314,7 @@ INSERT INTO cooks VALUES(7,10, 2.3);
 
 /*
 ** ----------------------------------------------------------------------------
-** updates in the cooks table 
+** updates in the itemDisc table 
 ** --------------------------------------------------------------------------*/
 UPDATE cooks SET employeeID = 9 WHERE instanceID = 1;
 UPDATE cooks SET employeeID = 2 WHERE instanceID = 3;
