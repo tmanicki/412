@@ -79,3 +79,17 @@ SELECT eName AS Terminated_Emp_Name, employeeID
 FROM employee
 WHERE eStatus = 'Terminated'
 ORDER BY eName asc;
+
+/*
+** ----------------------------------------------------------------------------
+** 	Chefs Average Cook Time 
+**
+** 	Retrieve information on chefs average cook time.
+** --------------------------------------------------------------------------*/
+
+
+SELECT E.eName, E.employeeID, AVG(C.CookTime) AS AvgCookTime
+FROM employee E, cooks C
+WHERE C.employeeID=E.employeeID 
+GROUP BY E.eName, E.employeeID
+ORDER BY eName asc;
