@@ -9,8 +9,9 @@
 @ddl
 
 -- show tables
+DESC rest
 DESC iMenu;
-DESC emp;
+DESC employee;
 DESC ordr;
 DESC bill;
 DESC tble
@@ -28,6 +29,11 @@ DESC vists;
 
 
 -- show table content
+/*
+** ----------------------------------------------------------------------------
+** employee table contenct
+** --------------------------------------------------------------------------*/
+SELECT * FROM rest;
 /*
 ** ----------------------------------------------------------------------------
 ** employee table contenct
