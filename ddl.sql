@@ -7,6 +7,18 @@
 
 /*
 ** ----------------------------------------------------------------------------
+** script to create the rest table 
+** --------------------------------------------------------------------------*/
+
+CREATE TABLE rest (
+	rName			VARCHAR2(20)	NOT NULL PRIMARY KEY,
+	rType			VARCHAR2(20)	NOT NULL
+);
+
+SHOW ERRORS;
+
+/*
+** ----------------------------------------------------------------------------
 ** script to create the item table 
 ** --------------------------------------------------------------------------*/
 
@@ -194,3 +206,18 @@ CREATE TABLE waiter (
   FOREIGN KEY(tNumber) REFERENCES tble(tNumber)
 );
 SHOW ERRORS;
+
+/*
+** ----------------------------------------------------------------------------
+** script to create the visits table 
+** --------------------------------------------------------------------------*/
+CREATE TABLE vists (
+  cPhone  INTEGER PRIMARY KEY,
+  rName   VARCHAR(20) NOT NULL,
+  tEnter  DATE NOT NULL,
+  tExit   DATE,
+  FOREIGN KEY(cPhone) REFERENCES customer(cPhone),
+  FOREIGN KEY (rName) REFERENCES rest(rName)
+);
+SHOW ERRORS;
+

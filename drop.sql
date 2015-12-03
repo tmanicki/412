@@ -16,6 +16,7 @@ DROP TABLE billDisc purge;
 DROP TABLE itemDisc purge;
 DROP TABLE pay purge;
 DROP TABLE waiter purge;
+DROP TABLE vists purge;
 
 -- Tables w/o Foriegn Key
 DROP TABLE food purge;
@@ -24,7 +25,9 @@ DROP TABLE tble purge;
 DROP TABLE bill purge;
 DROP TABLE customer purge;
 DROP TABLE iMenu purge;
-DROP TABLE ordr purge;
+DROP TABLE ordr  purge;
+DROP TABLE rest purge;
+
 
 
 /*
