@@ -273,26 +273,26 @@ UPDATE itemDisc SET amount = 2.15 WHERE productID = 10;
 ** --------------------------------------------------------------------------*/
 
 
-INSERT INTO cooks VALUES(1,1);
-INSERT INTO cooks VALUES(3,2);
-INSERT INTO cooks VALUES(7,3);
-INSERT INTO cooks VALUES(1,4);
-INSERT INTO cooks VALUES(2,5);
-INSERT INTO cooks VALUES(9,6);
-INSERT INTO cooks VALUES(10,7);
-INSERT INTO cooks VALUES(2,8);
-INSERT INTO cooks VALUES(10,9);
-INSERT INTO cooks VALUES(7,10);
+INSERT INTO cooks VALUES(1,1, 10);
+INSERT INTO cooks VALUES(3,2, 23);
+INSERT INTO cooks VALUES(7,3, 22.1);
+INSERT INTO cooks VALUES(1,4, 4.5);
+INSERT INTO cooks VALUES(2,5, 15.2);
+INSERT INTO cooks VALUES(9,6, 12.3);
+INSERT INTO cooks VALUES(10,7, 12.3);
+INSERT INTO cooks VALUES(2,8, 5.3);
+INSERT INTO cooks VALUES(10,9, 23.1);
+INSERT INTO cooks VALUES(7,10, 2.3);
 
 /*
 ** ----------------------------------------------------------------------------
-** updates in the itemDisc table 
+** updates in the cooks table 
 ** --------------------------------------------------------------------------*/
 UPDATE cooks SET employeeID = 9 WHERE instanceID = 1;
 UPDATE cooks SET employeeID = 2 WHERE instanceID = 3;
-UPDATE cooks SET employeeID = 2 WHERE instanceID = 7;
+UPDATE cooks SET AvgCookTime = 13.5 WHERE instanceID = 7;
 UPDATE cooks SET employeeID = 3 WHERE instanceID = 5;
-UPDATE cooks SET employeeID = 5 WHERE instanceID = 9;
+UPDATE cooks SET AvgCookTime = 12.39 WHERE instanceID = 9;
 
 /*
 ** ----------------------------------------------------------------------------

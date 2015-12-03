@@ -163,6 +163,7 @@ SHOW ERRORS;
 CREATE TABLE cooks (
 	employeeID  INTEGER,
   instanceID INTEGER,
+    AvgCookTime    FLOAT,
 	PRIMARY KEY (instanceID),
   FOREIGN KEY (employeeID) REFERENCES employee(employeeID)
   );
