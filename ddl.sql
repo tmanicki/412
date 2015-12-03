@@ -212,10 +212,11 @@ SHOW ERRORS;
 ** script to create the visits table 
 ** --------------------------------------------------------------------------*/
 CREATE TABLE vists (
-  cPhone  INTEGER PRIMARY KEY,
+  cPhone  INTEGER,
   rName   VARCHAR(20) NOT NULL,
   tEnter  DATE NOT NULL,
   tExit   DATE,
+  PRIMARY KEY (cPhone, tEnter),
   FOREIGN KEY(cPhone) REFERENCES customer(cPhone),
   FOREIGN KEY (rName) REFERENCES rest(rName)
 );
