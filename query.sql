@@ -31,3 +31,51 @@ SELECT M.iName, M.iDescription, M.productID, M.price, M.TimesOrdered
 FROM iMenu M
 WHERE M.TimesOrdered >=50
 ORDER BY TimesOrdered desc;
+
+/*
+** ----------------------------------------------------------------------------
+** 	All Chef Employees 
+**
+** 	Retrieve information on every employee who is a chef
+** --------------------------------------------------------------------------*/
+
+SELECT eName AS Chef_Name, employeeID
+FROM employee
+WHERE eStatus = 'Cook'
+ORDER BY eName asc;
+
+/*
+** ----------------------------------------------------------------------------
+** 	All Chef Manager 
+**
+** 	Retrieve information on every employee who is a manager
+** --------------------------------------------------------------------------*/
+
+SELECT eName AS Manager_Name, employeeID
+FROM employee
+WHERE eStatus = 'Manager'
+ORDER BY eName asc;
+
+/*
+** ----------------------------------------------------------------------------
+** 	All Chef Waiter 
+**
+** 	Retrieve information on every employee who is a waiter
+** --------------------------------------------------------------------------*/
+
+SELECT eName AS Waiter_Name, employeeID
+FROM employee
+WHERE eStatus = 'Waiter'
+ORDER BY eName asc;
+
+/*
+** ----------------------------------------------------------------------------
+** 	All Chef Terminated 
+**
+** 	Retrieve information on every employee who has been terminated
+** --------------------------------------------------------------------------*/
+
+SELECT eName AS Terminated_Emp_Name, employeeID
+FROM employee
+WHERE eStatus = 'Terminated'
+ORDER BY eName asc;

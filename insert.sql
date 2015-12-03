@@ -63,7 +63,7 @@ UPDATE employee SET eName = 'Iorn Man' WHERE employeeID = 9;
 UPDATE employee SET eStatus = 'Waiter' WHERE employeeID = 8;
 UPDATE employee SET eName = '007' WHERE employeeID = 10;
 UPDATE employee SET eName = 'Black Widow' WHERE employeeID = 1;
-UPDATE employee SET eStatus = 'Cook' WHERE employeeID = 1;
+UPDATE employee SET eStatus = 'Cook' WHERE employeeID = 10;
 
 
 /*
@@ -118,7 +118,7 @@ UPDATE tble SET PartySize = 3 WHERE tNumber = 4;
 
 /*
 ** ----------------------------------------------------------------------------
-** script to insert data into the bill table 
+** script to insert bill into the bill table 
 ** --------------------------------------------------------------------------*/
 
 INSERT INTO bill VALUES(10,1,32.50);
@@ -160,7 +160,7 @@ INSERT INTO customer VALUES('Broady Autumn',1234566699,'baba@gmail.com');
 
 /*
 ** ----------------------------------------------------------------------------
-** updates in the bill table 
+** updates in the customer table 
 ** --------------------------------------------------------------------------*/
 UPDATE customer SET cName = 'Sir Thor' WHERE cPhone = 8569861234;
 UPDATE customer SET cEmail = 'sara@live.com' WHERE cPhone = 8521234567;
@@ -290,9 +290,9 @@ INSERT INTO cooks VALUES(7,10, 2.3);
 ** --------------------------------------------------------------------------*/
 UPDATE cooks SET employeeID = 9 WHERE instanceID = 1;
 UPDATE cooks SET employeeID = 2 WHERE instanceID = 3;
-UPDATE cooks SET AvgCookTime = 13.5 WHERE instanceID = 7;
+UPDATE cooks SET CookTime = 13.5 WHERE instanceID = 7;
 UPDATE cooks SET employeeID = 3 WHERE instanceID = 5;
-UPDATE cooks SET AvgCookTime = 12.39 WHERE instanceID = 9;
+UPDATE cooks SET CookTime = 12.39 WHERE instanceID = 9;
 
 /*
 ** ----------------------------------------------------------------------------
