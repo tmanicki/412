@@ -129,8 +129,8 @@ SHOW ERRORS;
 CREATE TABLE food (
 	fStatus		  VARCHAR (20)  NOT NULL CHECK (fStatus = 'Ordered' OR fStatus = 'Completed'
   OR fStatus = 'In Progress'),
-	StartTime	  DATE  NOT NULL,
-  FinishTime  DATE  NOT NULL,
+	StartTime	  VARCHAR (20)  NOT NULL,
+  FinishTime  VARCHAR (20)  NOT NULL,
   instanceID  INTEGER,
   productID   INTEGER,
   orderID     INTEGER,
@@ -237,4 +237,7 @@ CREATE TABLE vists (
   FOREIGN KEY (rName) REFERENCES rest(rName)
 );
 SHOW ERRORS;
+
+
+
 

@@ -59,7 +59,7 @@ INSERT INTO employee VALUES(10,'James Bond','Waiter');
 ** ----------------------------------------------------------------------------
 ** updates in the employee table 
 ** --------------------------------------------------------------------------*/
-UPDATE employee SET eName = 'Iorn Man' WHERE employeeID = 9;
+UPDATE employee SET eName = 'Iron Man' WHERE employeeID = 9;
 UPDATE employee SET eStatus = 'Waiter' WHERE employeeID = 8;
 UPDATE employee SET eName = '007' WHERE employeeID = 10;
 UPDATE employee SET eName = 'Black Widow' WHERE employeeID = 1;
@@ -202,43 +202,33 @@ UPDATE fCategory SET ItemCategory = 'Appitizer' WHERE productID = 3;
 ** Date- This datatype contains the datetime fields YEAR, MONTH, DAY, HOUR, MINUTE, and SECOND.
 ** --------------------------------------------------------------------------*/
 
-INSERT INTO food VALUES('Completed',TO_DATE('12/01/2015 13:04:55','mm/dd/yyyy HH24:MI:SS'),
-                         TO_DATE('12/01/2015 13:34:24','mm/dd/yyyy hh24:mi:ss'),1,1,2);
+INSERT INTO food VALUES('Completed','12/01/2015 13:04:55','12/01/2015 13:34:24',1,1,2);
                          
-INSERT INTO food VALUES('Ordered',TO_DATE('11/22/2015 14:12:31','mm/dd/yyyy hh24:mi:ss'),
-                         TO_DATE('11/22/2015 15:04:23','mm/dd/yyyy hh24:mi:ss'),2,9,3);
+INSERT INTO food VALUES('Ordered','11/22/2015 14:12:31','11/22/2015 15:04:23',2,9,3);
                          
-INSERT INTO food VALUES('In Progress',TO_DATE('12/04/2015 10:33:21','mm/dd/yyyy hh24:mi:ss'),
-                         TO_DATE('12/04/2015 11:02:59','mm/dd/yyyy hh24:mi:ss'),3,5,5);
+INSERT INTO food VALUES('In Progress','12/04/2015 10:33:21','12/04/2015 11:02:59',3,5,5);
                          
-INSERT INTO food VALUES('Ordered',TO_DATE('11/22/2015 14:02:12','mm/dd/yyyy hh24:mi:ss'),
-                         TO_DATE('11/22/2015 14:45:28','mm/dd/yyyy hh24:mi:ss'),4,9,3);
+INSERT INTO food VALUES('Ordered','11/22/2015 14:02:12','11/22/2015 14:45:28',4,9,3);
                          
-INSERT INTO food VALUES('Completed',TO_DATE('10/21/2015 11:57:47','mm/dd/yyyy hh24:mi:ss'),
-                         TO_DATE('10/21/2015 12:43:42','mm/dd/yyyy hh24:mi:ss'),5,8,19);
+INSERT INTO food VALUES('Completed', '10/21/2015 11:57:47','10/21/2015 12:43:42',5,8,19);
                          
-INSERT INTO food VALUES('Ordered',TO_DATE('11/19/2015 16:18:39','mm/dd/yyyy hh24:mi:ss'),
-                         TO_DATE('11/19/2015 17:12:25','mm/dd/yyyy hh24:mi:ss'),6,10,5);
+INSERT INTO food VALUES('Ordered','11/19/2015 16:18:39','11/19/2015 17:12:25',6,10,5);
                          
-INSERT INTO food VALUES('Completed',TO_DATE('12/21/2015 18:49:31','mm/dd/yyyy hh24:mi:ss'),
-                         TO_DATE('12/21/2015 19:12:58','mm/dd/yyyy hh24:mi:ss'),7,1,2);
+INSERT INTO food VALUES('Completed','12/21/2015 18:49:31','12/21/2015 19:12:58',7,1,2);
                          
-INSERT INTO food VALUES('Ordered',TO_DATE('11/22/2015 14:12:31','mm/dd/yyyy hh24:mi:ss'),
-                         TO_DATE('11/22/2015 15:04:23','mm/dd/yyyy hh24:mi:ss'),8,9,2);
+INSERT INTO food VALUES('Ordered',TO_DATE('11/22/2015 14:12:31','11/22/2015 15:04:23',8,9,2);
                          
-INSERT INTO food VALUES('Completed',TO_DATE('12/01/2015 13:04:55','mm/dd/yyyy hh24:mi:ss'),
-                         TO_DATE('12/01/2015 13:34:24','mm/dd/yyyy hh24:mi:ss'),9,1,2);
+INSERT INTO food VALUES('Completed','12/01/2015 13:04:55','12/01/2015 13:34:24',9,1,2);
                          
-INSERT INTO food VALUES('Ordered',TO_DATE('11/22/2015 14:12:31','mm/dd/yyyy hh24:mi:ss'),
-                         TO_DATE('11/22/2015 15:04:23','mm/dd/yyyy hh24:mi:ss'),10,9,2);
+INSERT INTO food VALUES('Ordered','11/22/2015 14:12:31','11/22/2015 15:04:23',10,9,2);
 
 /*
 ** ----------------------------------------------------------------------------
 ** updates in the food table 
 ** --------------------------------------------------------------------------*/
 UPDATE food SET productID = 8 WHERE instanceID = 1;
-UPDATE food SET StartTime = TO_DATE('12/06/2015 10:33:21','mm/dd/yyyy hh24:mi:ss') WHERE instanceID = 3;
-UPDATE food SET FinishTime = TO_DATE('12/06/2015 11:02:59','mm/dd/yyyy hh24:mi:ss') WHERE instanceID = 3;
+UPDATE food SET StartTime = '12/06/2015 10:33:21' WHERE instanceID = 3;
+UPDATE food SET FinishTime = '12/06/2015 11:02:59' WHERE instanceID = 3;
 UPDATE food SET fStatus = 'Completed' WHERE instanceID = 4;
 UPDATE food SET orderID = 11 WHERE instanceID = 10;
 
@@ -247,23 +237,23 @@ UPDATE food SET orderID = 11 WHERE instanceID = 10;
 ** script to insert data into the billDisc table 
 ** --------------------------------------------------------------------------*/
 
-INSERT INTO billDisc VALUES(1,2,32.45);
-INSERT INTO billDisc VALUES(3,1,2.52);
-INSERT INTO billDisc VALUES(5,3,21.25);
-INSERT INTO billDisc VALUES(9,4,6.25);
-INSERT INTO billDisc VALUES(9,5,6);
-INSERT INTO billDisc VALUES(9,7,.23);
-INSERT INTO billDisc VALUES(5,6,9.99);
-INSERT INTO billDisc VALUES(3,9,8);
-INSERT INTO billDisc VALUES(3,8,3.45);
-INSERT INTO billDisc VALUES(1,10,2.15);
+INSERT INTO billDisc VALUES(7,2,32.45);
+INSERT INTO billDisc VALUES(7,1,2.52);
+INSERT INTO billDisc VALUES(2,3,21.25);
+INSERT INTO billDisc VALUES(2,4,6.25);
+INSERT INTO billDisc VALUES(2,5,6);
+INSERT INTO billDisc VALUES(7,7,.23);
+INSERT INTO billDisc VALUES(7,6,9.99);
+INSERT INTO billDisc VALUES(7,9,8);
+INSERT INTO billDisc VALUES(7,8,3.45);
+INSERT INTO billDisc VALUES(2,10,2.15);
 
 /*
 ** ----------------------------------------------------------------------------
 ** updates in the billDisc table 
 ** --------------------------------------------------------------------------*/
-UPDATE billDisc SET employeeID = 1 WHERE billID = 8;
-UPDATE billDisc SET employeeID = 9 WHERE billID = 10;
+UPDATE billDisc SET employeeID = 2 WHERE billID = 8;
+UPDATE billDisc SET employeeID = 2 WHERE billID = 10;
 UPDATE billDisc SET amount = 7 WHERE billID = 7;
 UPDATE billDisc SET amount = 12.2 WHERE billID = 6;
 UPDATE billDisc SET amount = 5.24 WHERE billID = 5;
@@ -274,23 +264,23 @@ UPDATE billDisc SET amount = 5.24 WHERE billID = 5;
 ** --------------------------------------------------------------------------*/
 
 INSERT INTO itemDisc VALUES(2,10,2.2);
-INSERT INTO itemDisc VALUES(4,9,1.25);
-INSERT INTO itemDisc VALUES(6,8,1.52);
-INSERT INTO itemDisc VALUES(8,7,6.25);
-INSERT INTO itemDisc VALUES(10,6,6.66);
-INSERT INTO itemDisc VALUES(1,5,3.52);
-INSERT INTO itemDisc VALUES(3,4,3);
+INSERT INTO itemDisc VALUES(7,9,1.25);
+INSERT INTO itemDisc VALUES(2,8,1.52);
+INSERT INTO itemDisc VALUES(7,7,6.25);
+INSERT INTO itemDisc VALUES(2,6,6.66);
+INSERT INTO itemDisc VALUES(7,5,3.52);
+INSERT INTO itemDisc VALUES(2,4,3);
 INSERT INTO itemDisc VALUES(7,3,5.43);
-INSERT INTO itemDisc VALUES(9,2,1.28);
-INSERT INTO itemDisc VALUES(5,1,3.45);
+INSERT INTO itemDisc VALUES(2,2,1.28);
+INSERT INTO itemDisc VALUES(7,1,3.45);
 
 
 /*
 ** ----------------------------------------------------------------------------
 ** updates in the itemDisc table 
 ** --------------------------------------------------------------------------*/
-UPDATE itemDisc SET employeeID = 9 WHERE productID = 2;
-UPDATE itemDisc SET employeeID = 2 WHERE productID = 4;
+UPDATE itemDisc SET employeeID = 7 WHERE productID = 2;
+UPDATE itemDisc SET employeeID = 7 WHERE productID = 4;
 UPDATE itemDisc SET amount = 2.52 WHERE productID = 6;
 UPDATE itemDisc SET amount = 3.22 WHERE productID = 8;
 UPDATE itemDisc SET amount = 2.15 WHERE productID = 10;
@@ -301,25 +291,25 @@ UPDATE itemDisc SET amount = 2.15 WHERE productID = 10;
 ** --------------------------------------------------------------------------*/
 
 
-INSERT INTO cooks VALUES(1,1, 10);
+INSERT INTO cooks VALUES(3,1, 10);
 INSERT INTO cooks VALUES(3,2, 23);
-INSERT INTO cooks VALUES(7,3, 22.1);
-INSERT INTO cooks VALUES(1,4, 4.5);
-INSERT INTO cooks VALUES(2,5, 15.2);
-INSERT INTO cooks VALUES(9,6, 12.3);
-INSERT INTO cooks VALUES(10,7, 12.3);
-INSERT INTO cooks VALUES(2,8, 5.3);
-INSERT INTO cooks VALUES(10,9, 23.1);
-INSERT INTO cooks VALUES(7,10, 2.3);
+INSERT INTO cooks VALUES(5,3, 22.1);
+INSERT INTO cooks VALUES(9,4, 4.5);
+INSERT INTO cooks VALUES(10,5, 15.2);
+INSERT INTO cooks VALUES(10,6, 12.3);
+INSERT INTO cooks VALUES(5,7, 12.3);
+INSERT INTO cooks VALUES(3,8, 5.3);
+INSERT INTO cooks VALUES(9,9, 23.1);
+INSERT INTO cooks VALUES(10,10, 2.3);
 
 /*
 ** ----------------------------------------------------------------------------
 ** updates in the itemDisc table 
 ** --------------------------------------------------------------------------*/
 UPDATE cooks SET employeeID = 9 WHERE instanceID = 1;
-UPDATE cooks SET employeeID = 2 WHERE instanceID = 3;
+UPDATE cooks SET employeeID = 3 WHERE instanceID = 3;
 UPDATE cooks SET CookTime = 13.5 WHERE instanceID = 7;
-UPDATE cooks SET employeeID = 3 WHERE instanceID = 5;
+UPDATE cooks SET employeeID = 5 WHERE instanceID = 5;
 UPDATE cooks SET CookTime = 12.39 WHERE instanceID = 9;
 
 /*
@@ -354,15 +344,15 @@ UPDATE pay SET cPhone = 8569861234 WHERE billID = 9;
 ** --------------------------------------------------------------------------*/
 
 INSERT INTO waiter VALUES(1,10);
-INSERT INTO waiter VALUES(2,1);
+INSERT INTO waiter VALUES(4,1);
 INSERT INTO waiter VALUES(3,9);
 INSERT INTO waiter VALUES(4,2);
-INSERT INTO waiter VALUES(5,8);
+INSERT INTO waiter VALUES(6,8);
 INSERT INTO waiter VALUES(6,3);
 INSERT INTO waiter VALUES(7,7);
 INSERT INTO waiter VALUES(8,4);
-INSERT INTO waiter VALUES(9,6);
-INSERT INTO waiter VALUES(10,5);
+INSERT INTO waiter VALUES(6,6);
+INSERT INTO waiter VALUES(2,5);
 
 
 /*
@@ -371,9 +361,9 @@ INSERT INTO waiter VALUES(10,5);
 ** --------------------------------------------------------------------------*/
 UPDATE waiter SET employeeID = 4 WHERE tNumber = 10;
 UPDATE waiter SET employeeID = 8 WHERE tNumber = 3;
-UPDATE waiter SET employeeID = 2 WHERE tNumber = 7;
-UPDATE waiter SET employeeID = 3 WHERE tNumber = 5;
-UPDATE waiter SET employeeID = 10 WHERE tNumber = 9;
+UPDATE waiter SET employeeID = 6 WHERE tNumber = 7;
+UPDATE waiter SET employeeID = 4 WHERE tNumber = 5;
+UPDATE waiter SET employeeID = 6 WHERE tNumber = 9;
 
 /*
 ** ----------------------------------------------------------------------------
@@ -429,5 +419,8 @@ WHERE cPhone = 4805226878 AND tEnter= TO_DATE('12/13/2015','mm/dd/yyyy');
 
 UPDATE vists SET cPhone = 4805102366
 WHERE cPhone = 4805226878 AND tEnter= TO_DATE('12/13/2015','mm/dd/yyyy');
+
+
+
 
     
