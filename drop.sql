@@ -31,16 +31,3 @@ DROP TABLE rest purge;
 
 
 
-/*
-DROP TABLE deptLocation purge;
-DROP TABLE project purge;
-DROP TABLE employee CASCADE CONSTRAINTS purge;
-DROP TABLE department purge;
-*/
-
--- Views for query 
-/*
-DROP VIEW projectHours;
-DROP VIEW projectExEmp;
-DROP VIEW empDependentCount;
-*/

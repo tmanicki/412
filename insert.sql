@@ -430,12 +430,4 @@ WHERE cPhone = 4805226878 AND tEnter= TO_DATE('12/13/2015','mm/dd/yyyy');
 UPDATE vists SET cPhone = 4805102366
 WHERE cPhone = 4805226878 AND tEnter= TO_DATE('12/13/2015','mm/dd/yyyy');
 
-
-
-
-
-
-
-
-
-                         
+    

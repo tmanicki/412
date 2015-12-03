@@ -197,3 +197,15 @@ FROM iMenu M
 WHERE M.AvgRating >=4 AND TimesOrdered>=50
 ORDER BY AvgRating desc;
 
+/*
+** ----------------------------------------------------------------------------
+** 	Customer Visits
+**
+** 	Retrieve information on how many times a custoemr has visted
+** --------------------------------------------------------------------------*/
+
+SELECT C.cName AS Name, C.cPhone AS Phone_Num, COUNT(*) AS Vists
+FROM customer C, vists V
+Where V.cPhone=C.cPhone
+GROUP BY C.cName, C.cPhone
+ORDER BY COUNT(*) asc;
