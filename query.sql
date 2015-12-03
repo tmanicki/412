@@ -93,3 +93,17 @@ FROM employee E, cooks C
 WHERE C.employeeID=E.employeeID 
 GROUP BY E.eName, E.employeeID
 ORDER BY eName asc;
+
+
+/*
+** ----------------------------------------------------------------------------
+** 	Healthy List
+**
+** 	Retrieve information on items with a low calorie count, or anything with 
+**  a calorie count of <= 150
+** --------------------------------------------------------------------------*/
+
+SELECT iName AS Item_Name, iDescription AS Description, calories, productID
+FROM iMenu
+WHERE calories <= 150
+ORDER BY calories asc;
