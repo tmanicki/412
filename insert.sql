@@ -216,7 +216,7 @@ INSERT INTO food VALUES('Ordered','11/19/2015 16:18:39','11/19/2015 17:12:25',6,
                          
 INSERT INTO food VALUES('Completed','12/21/2015 18:49:31','12/21/2015 19:12:58',7,1,2);
                          
-INSERT INTO food VALUES('Ordered',TO_DATE('11/22/2015 14:12:31','11/22/2015 15:04:23',8,9,2);
+INSERT INTO food VALUES('Ordered','11/22/2015 14:12:31','11/22/2015 15:04:23',8,9,2);
                          
 INSERT INTO food VALUES('Completed','12/01/2015 13:04:55','12/01/2015 13:34:24',9,1,2);
                          
@@ -298,7 +298,7 @@ INSERT INTO cooks VALUES(9,4, 4.5);
 INSERT INTO cooks VALUES(10,5, 15.2);
 INSERT INTO cooks VALUES(10,6, 12.3);
 INSERT INTO cooks VALUES(5,7, 12.3);
-INSERT INTO cooks VALUES(3,8, 5.3);
+INSERT INTO cooks VALUES(5,8, 5.3);
 INSERT INTO cooks VALUES(9,9, 23.1);
 INSERT INTO cooks VALUES(10,10, 2.3);
 
@@ -420,7 +420,3 @@ WHERE cPhone = 4805226878 AND tEnter= TO_DATE('12/13/2015','mm/dd/yyyy');
 UPDATE vists SET cPhone = 4805102366
 WHERE cPhone = 4805226878 AND tEnter= TO_DATE('12/13/2015','mm/dd/yyyy');
 
-
-
-
-    

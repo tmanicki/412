@@ -9,6 +9,7 @@
 @ddl
 
 -- show tables
+-- Ordere consistant from beginning to end of project
 DESC rest
 DESC iMenu;
 DESC employee;

@@ -18,11 +18,10 @@ DROP TABLE itemDisc purge;
 DROP TABLE pay purge;
 DROP TABLE waiter purge;
 DROP TABLE vists purge;
-DROP TABLE serve purge;
+DROP TABLE food purge;
 
 
 -- Tables w/o Foriegn Key
-DROP TABLE food purge;
 DROP TABLE employee purge;
 DROP TABLE tble purge;
 DROP TABLE bill purge;
