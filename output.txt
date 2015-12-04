@@ -1223,3 +1223,1222 @@ Table ORDR dropped.
 
 Table REST dropped.
 
+Table REST created.
+
+No Errors.
+
+Table IMENU created.
+
+No Errors.
+
+Table EMPLOYEE created.
+
+No Errors.
+
+Table ORDR created.
+
+No Errors.
+Table TBLE created.
+
+No Errors.
+
+Table BILL created.
+
+No Errors.
+
+Table CUSTOMER created.
+
+No Errors.
+
+Table FCATEGORY created.
+
+No Errors.
+
+Table FOOD created.
+
+No Errors.
+Table BILLDISC created.
+
+No Errors.
+
+Table ITEMDISC created.
+
+No Errors.
+
+Table COOKS created.
+
+No Errors.
+
+Table COOKS altered.
+
+No Errors.
+Table PAY created.
+
+No Errors.
+
+Table WAITER created.
+
+No Errors.
+Table VISTS created.
+
+No Errors.
+Name  Null     Type         
+----- -------- ------------ 
+RNAME NOT NULL VARCHAR2(20) 
+RTYPE NOT NULL VARCHAR2(20) 
+Name         Null     Type         
+------------ -------- ------------ 
+INAME        NOT NULL VARCHAR2(20) 
+IDESCRIPTION NOT NULL VARCHAR2(20) 
+CALORIES              NUMBER(38)   
+PRICE        NOT NULL FLOAT(126)   
+PRODUCTID    NOT NULL NUMBER(38)   
+TIMESORDERED          NUMBER(38)   
+AVGRATING             FLOAT(126)   
+Name       Null     Type         
+---------- -------- ------------ 
+EMPLOYEEID NOT NULL NUMBER(38)   
+ENAME      NOT NULL VARCHAR2(20) 
+ESTATUS    NOT NULL VARCHAR2(20) 
+Name    Null     Type       
+------- -------- ---------- 
+ORDERID NOT NULL NUMBER(38) 
+
+Name   Null     Type       
+------ -------- ---------- 
+TAX    NOT NULL FLOAT(126) 
+BILLID NOT NULL NUMBER(38) 
+TOTAL  NOT NULL FLOAT(126) 
+Name      Null     Type       
+--------- -------- ---------- 
+TNUMBER   NOT NULL NUMBER(38) 
+PARTYSIZE          NUMBER(38) 
+MSIZE              NUMBER(38) 
+
+Name   Null     Type         
+------ -------- ------------ 
+CNAME  NOT NULL VARCHAR2(20) 
+CPHONE NOT NULL NUMBER(38)   
+CEMAIL NOT NULL VARCHAR2(20) 
+Name       Null     Type         
+---------- -------- ------------ 
+FSTATUS    NOT NULL VARCHAR2(20) 
+STARTTIME  NOT NULL VARCHAR2(20) 
+FINISHTIME NOT NULL VARCHAR2(20) 
+INSTANCEID NOT NULL NUMBER(38)   
+PRODUCTID           NUMBER(38)   
+ORDERID             NUMBER(38)   
+Name       Null     Type       
+---------- -------- ---------- 
+EMPLOYEEID NOT NULL NUMBER(38) 
+BILLID     NOT NULL NUMBER(38) 
+AMOUNT     NOT NULL FLOAT(126) 
+Name       Null     Type       
+---------- -------- ---------- 
+EMPLOYEEID          NUMBER(38) 
+PRODUCTID  NOT NULL NUMBER(38) 
+AMOUNT     NOT NULL FLOAT(126) 
+Name       Null     Type       
+---------- -------- ---------- 
+EMPLOYEEID          NUMBER(38) 
+INSTANCEID NOT NULL NUMBER(38) 
+COOKTIME            FLOAT(126) 
+Name        Null     Type         
+----------- -------- ------------ 
+BILLID      NOT NULL NUMBER(38)   
+CPHONE      NOT NULL NUMBER(38)   
+TIP         NOT NULL FLOAT(126)   
+PAYMENTTYPE NOT NULL VARCHAR2(20) 
+Name       Null     Type       
+---------- -------- ---------- 
+EMPLOYEEID          NUMBER(38) 
+TNUMBER    NOT NULL NUMBER(38) 
+Name   Null     Type         
+------ -------- ------------ 
+CPHONE NOT NULL NUMBER(38)   
+RNAME  NOT NULL VARCHAR2(20) 
+TENTER NOT NULL DATE         
+TEXIT           DATE         
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row updated.
+
+
+1 row updated.
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row updated.
+
+
+1 row updated.
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+RNAME                RTYPE              
+-------------------- --------------------
+Timothy Tacos        Mexican             
+
+INAME                IDESCRIPTION           CALORIES      PRICE  PRODUCTID
+-------------------- -------------------- ---------- ---------- ----------
+                           TIMESORDERED  AVGRATING
+--------------------------------------- ----------
+Cheese Pizza         it is really cheese         220       20.5          1 
+                                     32          5
+
+Hawaiian Pizza       aloha friends               370      19.99          2 
+                                     22        3.4
+
+Heart Killer Pizza   death is near              1450         30          3 
+                                      2        2.3
+
+
+INAME                IDESCRIPTION           CALORIES      PRICE  PRODUCTID
+-------------------- -------------------- ---------- ---------- ----------
+                           TIMESORDERED  AVGRATING
+--------------------------------------- ----------
+Wings                Hot, BBQ, or Tangy          120         25          4 
+                                     15          5
+
+Coke                 soda                        210          3          5 
+                                    290          4
+
+Ice Tea              not hot, ice                  5       3.75          6 
+                                    170        4.5
+
+
+INAME                IDESCRIPTION           CALORIES      PRICE  PRODUCTID
+-------------------- -------------------- ---------- ---------- ----------
+                           TIMESORDERED  AVGRATING
+--------------------------------------- ----------
+Tacos                Best in the West            240      12.45          7 
+                                     30          1
+
+Hot Dog              Mustard or Ketchup?         500       9.99          8 
+                                     15        3.4
+
+PBJ                  classic                      20          5          9 
+                                     68        3.2
+
+
+INAME                IDESCRIPTION           CALORIES      PRICE  PRODUCTID
+-------------------- -------------------- ---------- ---------- ----------
+                           TIMESORDERED  AVGRATING
+--------------------------------------- ----------
+Gelato               finest at fine              320      30.99         10 
+                                     25        4.4
+
+
+ 10 rows selected 
+
+
+EMPLOYEEID ENAME                ESTATUS            
+---------- -------------------- --------------------
+         1 Black Widow          Terminated          
+         2 David E.             Manager             
+         3 Jessie L.            Cook                
+         4 Norman B.            Waiter              
+         5 Stan Lee             Cook                
+         6 The Hulk             Waiter              
+         7 Obi-Wan              Manager             
+         8 Captain Rogers       Waiter              
+         9 Iron Man             Cook                
+        10 007                  Cook                
+
+ 10 rows selected 
+
+
+   ORDERID
+----------
+         2
+         3
+         4
+         5
+         6
+        10
+        11
+        17
+        18
+        19
+
+ 10 rows selected 
+
+
+   TNUMBER  PARTYSIZE      MSIZE
+---------- ---------- ----------
+         1          4          5
+         2          5          6
+         3          2          2
+         4          3          5
+         5          2          4
+         6          5          5
+         7          2          3
+         8          6          8
+         9          4          6
+        10          3          3
+
+ 10 rows selected 
+
+
+       TAX     BILLID      TOTAL
+---------- ---------- ----------
+      1.23          1       32.5
+      12.2          2      22.45
+     15.54          3      10.01
+         1          4         20
+       5.3          5     132.56
+      5.55          6      11.99
+     34.45          7      100.3
+      4.45          8      32.25
+      7.89          9      59.62
+      3.52         10      93.25
+
+ 10 rows selected 
+
+
+CNAME                    CPHONE CEMAIL             
+-------------------- ---------- --------------------
+Jason k.             4803125846 jak@gmail.com       
+Indiana Jones        4805226878 spock@gmail.com     
+King Kong            9293121548 kk@yahoo.com        
+Sara R.              8521234567 sara@live.com       
+Odin                 5256369512 odin@cox.net        
+Sir Thor             8569861234 thor@gmail.com      
+Luke Skywalker       5861329645 dv@gmail.com        
+Bon Jovi             4805102366 bonjov@gmail.com    
+Rwby                 8521554455 rby@gmail.com       
+Broady Autumn        1234566699 baba@gmail.com      
+
+ 10 rows selected 
+
+ PRODUCTID ITEMCATEGORY       
+---------- --------------------
+         1 Appitizer           
+         2 Entre               
+         3 Appitizer           
+         4 Appitizer           
+         5 Drink               
+         6 Drink               
+         7 Entre               
+         8 Appitizer           
+         9 Salad               
+        10 Desert              
+
+ 10 rows selected 
+
+
+FSTATUS              STARTTIME            FINISHTIME           INSTANCEID
+-------------------- -------------------- -------------------- ----------
+ PRODUCTID    ORDERID
+---------- ----------
+Completed            12/01/2015 13:04:55  12/01/2015 13:34:24           1 
+         8          2
+
+Ordered              11/22/2015 14:12:31  11/22/2015 15:04:23           2 
+         9          3
+
+In Progress          12/06/2015 10:33:21  12/06/2015 11:02:59           3 
+         5          5
+
+
+FSTATUS              STARTTIME            FINISHTIME           INSTANCEID
+-------------------- -------------------- -------------------- ----------
+ PRODUCTID    ORDERID
+---------- ----------
+Completed            11/22/2015 14:02:12  11/22/2015 14:45:28           4 
+         9          3
+
+Completed            10/21/2015 11:57:47  10/21/2015 12:43:42           5 
+         8         19
+
+Ordered              11/19/2015 16:18:39  11/19/2015 17:12:25           6 
+        10          5
+
+
+FSTATUS              STARTTIME            FINISHTIME           INSTANCEID
+-------------------- -------------------- -------------------- ----------
+ PRODUCTID    ORDERID
+---------- ----------
+Completed            12/21/2015 18:49:31  12/21/2015 19:12:58           7 
+         1          2
+
+Ordered              11/22/2015 14:12:31  11/22/2015 15:04:23           8 
+         9          2
+
+Completed            12/01/2015 13:04:55  12/01/2015 13:34:24           9 
+         1          2
+
+
+FSTATUS              STARTTIME            FINISHTIME           INSTANCEID
+-------------------- -------------------- -------------------- ----------
+ PRODUCTID    ORDERID
+---------- ----------
+Ordered              11/22/2015 14:12:31  11/22/2015 15:04:23          10 
+         9         11
+
+
+ 10 rows selected 
+
+
+EMPLOYEEID     BILLID     AMOUNT
+---------- ---------- ----------
+         7          2      32.45
+         7          1       2.52
+         2          3      21.25
+         2          4       6.25
+         2          5       5.24
+         7          7          7
+         7          6       12.2
+         7          9          8
+         2          8       3.45
+         2         10       2.15
+
+ 10 rows selected 
+
+
+EMPLOYEEID  PRODUCTID     AMOUNT
+---------- ---------- ----------
+         2         10       2.15
+         7          9       1.25
+         2          8       3.22
+         7          7       6.25
+         2          6       2.52
+         7          5       3.52
+         7          4          3
+         7          3       5.43
+         7          2       1.28
+         7          1       3.45
+
+ 10 rows selected 
+
+EMPLOYEEID INSTANCEID   COOKTIME
+---------- ---------- ----------
+         9          1         10
+         3          2         23
+         3          3       22.1
+         9          4        4.5
+         5          5       15.2
+        10          6       12.3
+         5          7       13.5
+         5          8        5.3
+         9          9      12.39
+        10         10        2.3
+
+ 10 rows selected 
+
+
+    BILLID     CPHONE        TIP PAYMENTTYPE        
+---------- ---------- ---------- --------------------
+         1 4805226878       1.25 Cash                
+         2 9293121548         22 Check               
+         3 4805226878        1.2 Card                
+         4 4803125846         12 Cash                
+         5 1234566699          3 Check               
+         6 5861329645       12.2 Card                
+         7 8521554455        2.5 Card                
+         8 8569861234       25.9 Cash                
+         9 8569861234      12.32 Check               
+        10 4805226878       9.25 Check               
+
+ 10 rows selected 
+
+
+EMPLOYEEID    TNUMBER
+---------- ----------
+         4         10
+         4          1
+         6          9
+         4          2
+         6          8
+         8          3
+         6          7
+         8          4
+         6          6
+         4          5
+
+ 10 rows selected 
+
+
+    CPHONE RNAME                TENTER    TEXIT   
+---------- -------------------- --------- ---------
+4803125846 Timothy Tacos        27-NOV-15 27-NOV-15
+4805102366 Timothy Tacos        13-DEC-15 13-DEC-15
+4805226878 Timothy Tacos        15-DEC-15          
+9293121548 Timothy Tacos        30-NOV-15 30-NOV-15
+8521234567 Timothy Tacos        11-OCT-15 11-OCT-15
+5256369512 Timothy Tacos        27-DEC-15 27-DEC-15
+8569861234 Timothy Tacos        02-SEP-15          
+4805102366 Timothy Tacos        19-NOV-15 19-NOV-15
+5861329645 Timothy Tacos        27-NOV-15 27-NOV-15
+1234566699 Timothy Tacos        15-DEC-15 15-DEC-15
+
+ 10 rows selected 
+
+
+INAME                IDESCRIPTION          PRODUCTID      PRICE  AVGRATING
+-------------------- -------------------- ---------- ---------- ----------
+Cheese Pizza         it is really cheese           1       20.5          5
+Wings                Hot, BBQ, or Tangy            4         25          5
+Ice Tea              not hot, ice                  6       3.75        4.5
+Gelato               finest at fine               10      30.99        4.4
+Coke                 soda                          5          3          4
+
+
+INAME                IDESCRIPTION          PRODUCTID      PRICE
+-------------------- -------------------- ---------- ----------
+                           TIMESORDERED
+---------------------------------------
+Coke                 soda                          5          3 
+                                    290
+
+Ice Tea              not hot, ice                  6       3.75 
+                                    170
+
+PBJ                  classic                       9          5 
+                                     68
+
+
+ENAME                EMPLOYEEID                             AVGCOOKTIME
+-------------------- ---------- ---------------------------------------
+007                          10                                     7.3
+Iron Man                      9                                 9.0E+00
+Stan Lee                      5                                 1.1E+01
+
+
+CHEF_NAME            EMPLOYEEID
+-------------------- ----------
+007                          10
+Iron Man                      9
+Jessie L.                     3
+Stan Lee                      5
+
+
+MANAGER_NAME         EMPLOYEEID
+-------------------- ----------
+David E.                      2
+Obi-Wan                       7
+
+
+WAITER_NAME          EMPLOYEEID
+-------------------- ----------
+Captain Rogers                8
+Norman B.                     4
+The Hulk                      6
+
+
+TERMINATED_EMP_NAME  EMPLOYEEID
+-------------------- ----------
+Black Widow                   1
+
+ENAME                EMPLOYEEID                             AVGCOOKTIME
+-------------------- ---------- ---------------------------------------
+007                          10                                     7.3
+Iron Man                      9                                 9.0E+00
+Jessie L.                     3                                   22.55
+Stan Lee                      5                                 1.1E+01
+
+
+ITEM_NAME            DESCRIPTION            CALORIES  PRODUCTID
+-------------------- -------------------- ---------- ----------
+Ice Tea              not hot, ice                  5          6
+PBJ                  classic                      20          9
+Wings                Hot, BBQ, or Tangy          120          4
+
+
+ENTRE_NAME           DESCRIPTION            CALORIES  PRODUCTID
+-------------------- -------------------- ---------- ----------
+Hawaiian Pizza       aloha friends               370          2
+Tacos                Best in the West            240          7
+
+
+DESERT_NAME          DESCRIPTION            CALORIES  PRODUCTID
+-------------------- -------------------- ---------- ----------
+Gelato               finest at fine              320         10
+
+
+DRINK_NAME           DESCRIPTION            CALORIES  PRODUCTID
+-------------------- -------------------- ---------- ----------
+Coke                 soda                        210          5
+Ice Tea              not hot, ice                  5          6
+
+SALAD_NAME           DESCRIPTION            CALORIES  PRODUCTID
+-------------------- -------------------- ---------- ----------
+PBJ                  classic                      20          9
+
+
+APP_NAME             DESCRIPTION            CALORIES  PRODUCTID
+-------------------- -------------------- ---------- ----------
+Cheese Pizza         it is really cheese         220          1
+Heart Killer Pizza   death is near              1450          3
+Hot Dog              Mustard or Ketchup?         500          8
+Wings                Hot, BBQ, or Tangy          120          4
+
+
+INAME                IDESCRIPTION          PRODUCTID      PRICE  AVGRATING
+-------------------- -------------------- ---------- ---------- ----------
+                           TIMESORDERED
+---------------------------------------
+Ice Tea              not hot, ice                  6       3.75        4.5 
+                                    170
+
+Coke                 soda                          5          3          4 
+                                    290
+
+
+NAME                  PHONE_NUM      VISTS
+-------------------- ---------- ----------
+Broady Autumn        1234566699          1
+Jason k.             4803125846          1
+Sara R.              8521234567          1
+Indiana Jones        4805226878          1
+Sir Thor             8569861234          1
+King Kong            9293121548          1
+Luke Skywalker       5861329645          1
+Odin                 5256369512          1
+Bon Jovi             4805102366          2
+
+ 9 rows selected 
+
+
+Table FCATEGORY dropped.
+
+
+Table COOKS dropped.
+
+
+Table BILLDISC dropped.
+
+Table ITEMDISC dropped.
+
+
+Table PAY dropped.
+
+
+Table WAITER dropped.
+
+
+Table VISTS dropped.
+
+Table FOOD dropped.
+
+
+Table EMPLOYEE dropped.
+
+
+Table TBLE dropped.
+
+
+Table BILL dropped.
+
+Table CUSTOMER dropped.
+
+
+Table IMENU dropped.
+
+
+Table ORDR dropped.
+
+Table REST dropped.
+
