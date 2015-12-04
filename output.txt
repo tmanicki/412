@@ -1,3 +1,12 @@
+/*
+** ----------------------------------------------------------------------------
+** Timothy Manicki
+** CSE 412, 4:30-5:45
+** tmanicki@asu.edu
+** --------------------------------------------------------------------------*/
+/* 
+Tables are created, @ddl
+*/
 Table REST created.
 
 No Errors.
@@ -58,10 +67,22 @@ No Errors.
 Table VISTS created.
 
 No Errors.
+
+/* 
+all tables DESCs
+*/
+
+/* 
+rest table
+*/
 Name  Null     Type         
 ----- -------- ------------ 
 RNAME NOT NULL VARCHAR2(20) 
 RTYPE NOT NULL VARCHAR2(20) 
+
+/* 
+iMenu tale
+*/
 Name         Null     Type         
 ------------ -------- ------------ 
 INAME        NOT NULL VARCHAR2(20) 
@@ -72,20 +93,35 @@ PRODUCTID    NOT NULL NUMBER(38)
 TIMESORDERED          NUMBER(38)   
 AVGRATING             FLOAT(126)   
 
+/* 
+employee table
+*/
 Name       Null     Type         
 ---------- -------- ------------ 
 EMPLOYEEID NOT NULL NUMBER(38)   
 ENAME      NOT NULL VARCHAR2(20) 
 ESTATUS    NOT NULL VARCHAR2(20) 
+
+/* 
+order table
+*/
 Name    Null     Type       
 ------- -------- ---------- 
 ORDERID NOT NULL NUMBER(38) 
+
+/* 
+tble table
+*/
 
 Name   Null     Type       
 ------ -------- ---------- 
 TAX    NOT NULL FLOAT(126) 
 BILLID NOT NULL NUMBER(38) 
 TOTAL  NOT NULL FLOAT(126) 
+
+/* 
+bill table
+*/
 Name      Null     Type       
 --------- -------- ---------- 
 TNUMBER   NOT NULL NUMBER(38) 

@@ -17,6 +17,7 @@ DESC ordr;
 DESC bill;
 DESC tble
 DESC customer;
+DESC fCategory;
 DESC food;
 DESC billDisc;
 DESC itemDisc;
